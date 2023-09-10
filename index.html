@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      body {
+        background: #f3eefe;
+      }
+      h1 {
+        color: #f0629c;
+        border: 1px solid white;
+        border-width: 3px;
+        line-height: 50px;
+        padding: 20px;
+        font-size: 2em;
+        border-radius: 8px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        border: 1px solid black;
+        border-radius: 7px;
+      }
+      p {
+        text-align: center;
+        line-height: 2;
+        font-size: 18px;
+      }
+      .learnmore {
+        padding-top: 10px;
+        text-decoration: none;
+        color: #f0629c;
+      }
+      .learnmore:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #f29fc2;
+        color: white;
+        font-size: 25px;
+        padding: 20px 25px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 250ms ease-in-out;
+      }
+      div {
+        text-align: center;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        color: #f29fc2;
+        background-color: white;
+      }
+      a {
+        font-size: 25px;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 35px 50px;
+      }
+      .owner {
+        opacity: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <body cz-shortcut-listen="true">
+      <div class="content">
+        <h1>I Love Dance💃</h1>
+        <h2>
+          Especially Classical dance<br />
+          'KATHAK'
+        </h2>
+        <hr />
+        <img
+          src="https://melodymakersdubai.com/wp-content/uploads/2021/02/Kathak-LA-1.jpg"
+          width="400px"
+        />
+        <hr />
+        <div class="about">
+          <p>
+            <em><strong>Kathak</strong></em
+            >, one of the main forms of classical dance-drama of India, other
+            major ones being bharata natyam, kathakali, manipuri, kuchipudi, and
+            odissi. Kathak is indigenous to northern India and developed under
+            the influence of both Hindu and Muslim cultures. These Kathakars
+            wandered around and communicated legendary stories via music, dance
+            and songs quite like the early Greek theatre. The genre developed
+            during the Bhakti movement, the trend of theistic devotion which
+            evolved in medieval Hinduism. The Kathakars communicate stories
+            through rhythmic foot movements, hand gestures, facial expressions
+            and eye work. This performing art that incorporates legends from
+            ancient mythology and great Indian epics, especially from the life
+            of Lord Krishna became quite popular in the courts of North Indian
+            kingdoms. Three specific forms of this genre that is three gharanas
+            (schools), which mostly differ in emphasis given to footwork versus
+            acting, are more famous namely, the Jaipur gharana, the Benaras
+            gharana and the Lucknow gharana. Kathak is characterized by
+            intricate footwork and precise rhythmic patterns that the dancer
+            articulates by controlling about 100 ankle bells. It takes its
+            movements from life, stylizes them, and adds the complex rhythmic
+            patterns. Kathak is danced by both males and females; many of the
+            dances convey moods of love.
+          </p>
+          <br />
+          <a
+            href="https://en.wikipedia.org/wiki/Kathak"
+            target="_blank"
+            class="learnmore"
+          >
+            Read on Wikipedia
+          </a>
+          <br />
+          <button>APPLY FOR ONLINE CLASSES<br />(for age 15 and above)</button>
+          <strong>Hurry Up! Don't miss the chance.👆</strong>
+        </div>
+        <br />
+        <div class="owner">Coded by Aakriti Verma</div>
+      </div>
+
+      <script>
+        function contactUs() {
+          let name = prompt("What is your name?");
+          let age = prompt("What is your age?");
+          if (age >= 15) {
+            let mail = prompt("Enter your E-Mail address here.");
+            alert(
+              "Thank You " +
+                name +
+                " for applying, we will inform you about the classes on your e-mail, i.e.'" +
+                mail +
+                "'"
+            );
+          } else {
+            alert("Sorry! " + name + " you cannot apply.");
+          }
+        }
+        let applyButton = document.querySelector("button");
+        applyButton.addEventListener("click", contactUs);
+      </script>
+    </body>
+  </body>
+</html>
